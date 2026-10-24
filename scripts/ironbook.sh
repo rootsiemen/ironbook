@@ -11,6 +11,7 @@ source "$SCRIPTS_DIR/build/generate_changelog.sh"
 source "$SCRIPTS_DIR/tools/get_codebase.sh"
 source "$SCRIPTS_DIR/tools/get_tree.sh"
 source "$SCRIPTS_DIR/release/sign.sh"
+source "$SCRIPTS_DIR/lib/update.sh"
 source "$SCRIPTS_DIR/release/update_version.sh"
 source "$SCRIPTS_DIR/release/release.sh"
 
@@ -42,6 +43,11 @@ case "$COMMAND" in
     release)
         shift
         cmd_release "$@"
+        ;;
+
+    check-update)
+        shift
+        cmd_check_update "$@"
         ;;
 
     setup)

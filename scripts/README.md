@@ -15,6 +15,7 @@ scripts/ironbook.sh <command>
 | `setup` | Run the first-time developer setup |
 | `build` | Build the project artifacts |
 | `release` | Cut and sign a release |
+| `check-update` | Check an update manifest for a newer release (check only — no download/install yet) |
 | `update-version` | Bump version numbers |
 | `get-tree` | Print the repository tree |
 | `get-codebase` | Dump the codebase (useful for reviews and AI context) |
