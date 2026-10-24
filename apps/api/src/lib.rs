@@ -8,4 +8,5 @@ pub mod log;
 pub mod proto;
 pub mod services;
 pub mod state;
+pub mod telemetry;
 pub mod views;
